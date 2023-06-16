@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderImg from '../assets/images/'
+import HeaderImg from '../img/StartupBhutan.jpg'
 
 const AboutUs = () => {
   return (
@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className="relative flex justify-center items-start h-[400px] w-auto">
                 <img
                 src={HeaderImg}
-                alt="Hero Background"
+                alt="Startup Background"
                 className="w-full h-[250px] lg:h-[400px] relative -z-30"
                 />
                 <h1 className="absolute bottom-40 lg:bottom-10 left-0 px-6 py-10 text-2xl font-bold text-white md:px-20 md:py-10 md:text-5xl">
