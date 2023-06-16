@@ -12,7 +12,7 @@ const NavBar = ({ children }) => {
         <div className="drawer-content flex flex-col">
           <div className="flex items-center justify-between px-6 py-4 bg-transparent md:px-8 lg:w-auto lg:px-8">
             <a href="/">
-              <img className="h-12 md:h-16 lg:h-16" src={RGOBLogo} alt="CST" />
+              <img className="h-16 md:h-18 lg:h-18" src={RGOBLogo} alt="CST" />
             </a>
             <label
               htmlFor="my-drawer-4"
@@ -32,9 +32,9 @@ const NavBar = ({ children }) => {
           {children}
           <Footer />
         </div>
-        <div className="drawer-side h-full">
+        <div className="drawer-side ">
           <label htmlFor="my-drawer-4" className="drawer-overlay "></label>
-          <ul className="flex flex-col p-10 w-[350px] bg-[#021b2a] text-white text-2xl ">
+          <ul className="flex flex-col p-10 w-[300px] sm:w-[350px] h-[100vh] bg-[#021b2a] text-white text-2xl ">
             <a href="/">
               <img
                 className="h-auto w-20 mx-auto mb-10"
@@ -45,64 +45,61 @@ const NavBar = ({ children }) => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li className="mt-5">
-              <Link to="/about">About Us</Link>
-            </li>
             <li>
               <div className="collapse collapse-arrow pr-5">
                 <input type="checkbox" />
-                <div className="collapse-title pl-0 ">Academics</div>
+                <div className="collapse-title pl-0 ">About Us</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/admission-policy">Admission Policy</Link>
-                  <Link to="/academics">Department</Link>
-                  <Link to="/fee-structure">Fee Structure</Link>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="collapse collapse-arrow pr-5">
-                <input type="checkbox" />
-                <div className="collapse-title pl-0 ">
-                  News &amp; Announcements
-                </div>
-                <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/news">News</Link>
-                  <Link to="/events">Events</Link>
-                  <Link to="/vacancy">Vacancy</Link>
-                  <Link to="/tender">Tenders</Link>
-                </div>
-              </div>
-            </li>
-            <li className="my-5">
-              <Link to="/research-and-services">Research &amp; Services</Link>
-            </li>
-            <li>
-              <div className="collapse collapse-arrow pr-5 ">
-                <input type="checkbox" />
-                <div className="collapse-title pl-0 ">Life At CST</div>
-                <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/accommodation">Accommodation</Link>
-                  <Link to="/life-at-cst">Clubs</Link>
-                  <Link to="/games-sports">Games and Sports</Link>
-                  <Link to="/library">Library</Link>
-                  <Link to="/services">Services and Facilities</Link>
+                  <Link to="/admission-policy">Vision</Link>
+                  <Link to="/academics">Mission</Link>
+                  <Link to="/fee-structure">Policy and Regulations</Link>
+                  <Link to="/fee-structure">Frameworks</Link>
+                  <Link to="/fee-structure">Mandates</Link>
+                  <Link to="/fee-structure">DoEE, EPD</Link>
+                  <Link to="/fee-structure">Our Partners</Link>
                 </div>
               </div>
             </li>
             <li>
               <div className="collapse collapse-arrow pr-5">
                 <input type="checkbox" />
-                <div className="collapse-title pl-0 ">Connect</div>
+                <div className="collapse-title pl-0 ">Services</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/connect">FAQ</Link>
-                  <Link to="/organogram">Organogram</Link>
-                  <Link to="/staff-directory">Staff Directory</Link>
+                  <Link to="/admission-policy">Incubation Center</Link>
+                  <Link to="/academics">BDS</Link>
                 </div>
               </div>
             </li>
             <li>
-              <Link to="/downloads">Downloads</Link>
+              <div className="collapse collapse-arrow pr-5">
+                <input type="checkbox" />
+                <div className="collapse-title pl-0 ">Programs</div>
+                <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
+                  <Link to="/admission-policy">Startup Events</Link>
+                  <Link to="/academics">Training</Link>
+                  <Link to="/fee-structure">Mentoring Programs</Link>
+                  <Link to="/fee-structure">Promotion and Networking Events</Link>
+                  <Link to="/fee-structure">Accelerator Programs</Link>
+                </div>
+              </div>
             </li>
+            <li>
+              <div className="collapse collapse-arrow pr-5">
+                <input type="checkbox" />
+                <div className="collapse-title pl-0 ">Startups</div>
+                <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
+                  <Link to="/admission-policy">Existing</Link>
+                  <Link to="/academics">Incubates</Link>
+                  <Link to="/fee-structure">Graduated</Link>
+                  <Link to="/fee-structure">Startups</Link>
+                  
+                </div>
+              </div>
+            </li>
+            <li>
+              <Link to="/annoucements">Announcements</Link>
+            </li>
+           
           </ul>
         </div>
       </div>
