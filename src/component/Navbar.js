@@ -65,8 +65,8 @@ const NavBar = ({ children }) => {
                 <input type="checkbox" />
                 <div className="collapse-title pl-0 ">Services</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/admission-policy">Incubation Center</Link>
-                  <Link to="/academics">BDS</Link>
+                  <Link to="/services/#incubation">Incubation Center</Link>
+                  <Link to="/services">BDS</Link>
                 </div>
               </div>
             </li>
