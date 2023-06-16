@@ -6,11 +6,6 @@ import RGOBLogo from "../img/rgobLogo.png";
 
 const NavBar = ({ children }) => {
   return (
-<<<<<<< HEAD
-    <div>navbar
-        {children}
-        <div>Hello</div>
-=======
     <div className="bg-[#fff0]">
       <div className="drawer drawer-end">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
@@ -70,8 +65,8 @@ const NavBar = ({ children }) => {
                 <input type="checkbox" />
                 <div className="collapse-title pl-0 ">Services</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/admission-policy">Incubation Center</Link>
-                  <Link to="/academics">BDS</Link>
+                  <Link to="/services/#incubation">Incubation Center</Link>
+                  <Link to="/services">BDS</Link>
                 </div>
               </div>
             </li>
@@ -108,7 +103,6 @@ const NavBar = ({ children }) => {
           </ul>
         </div>
       </div>
->>>>>>> d1b35f15e19f37380faa9b963ce7b5ae08e750a9
     </div>
   );
 };
