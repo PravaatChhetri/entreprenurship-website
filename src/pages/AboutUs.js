@@ -20,7 +20,7 @@ const AboutUs = () => {
       </div>
       I
       <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 className="text-2xl font-bold my-4 text-[#1d83bd]">Our Vision</h2>
+        <h2 id="vision" className="text-2xl font-bold my-4 text-[#1d83bd]">Our Vision</h2>
         <div className=" bg-white shadow-md rounded-lg p-6 mx-auto">
           <p className="text-gray-700 text-xl">
             To create a world where every individual with an entrepreneurial
@@ -31,7 +31,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 className="text-2xl font-bold my-4 text-[#1d83bd]">Our Mission</h2>
+        <h2 id="mission" className="text-2xl font-bold my-4 text-[#1d83bd]">Our Mission</h2>
         <div className=" bg-white shadow-md rounded-lg p-6 mx-auto">
           <p className="text-gray-700 text-xl">
             <ul className="list-disc list-inside flex flex-col gap-y-[15px]">
@@ -79,7 +79,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 className="text-2xl font-bold my-4 text-[#1d83bd]">
+        <h2 id="PandR" className="text-2xl font-bold my-4 text-[#1d83bd]">
           Policy and Regulations
         </h2>
         <div className=" bg-white shadow-md rounded-lg p-6 mx-auto">
@@ -127,7 +127,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 className="text-2xl font-bold my-4 text-[#1d83bd]">Framework</h2>
+        <h2 id="framework" className="text-2xl font-bold my-4 text-[#1d83bd]">Framework</h2>
           <div className=" bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
               At Startup Bhutan, we follow a robust framework that combines
@@ -140,7 +140,7 @@ const AboutUs = () => {
           </div>
       </div>
       <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 className="text-2xl font-bold my-4 text-[#1d83bd]">Mandates</h2>
+        <h2 id="mandates" className="text-2xl font-bold my-4 text-[#1d83bd]">Mandates</h2>
           <div className=" bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
               <ul className="list-disc list-inside flex flex-col gap-y-[15px]">
@@ -191,7 +191,7 @@ const AboutUs = () => {
           </div>
       </div>
       <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 className="text-2xl font-bold my-4 text-[#1d83bd]">DoEE, EPD</h2>
+        <h2 id="dp" className="text-2xl font-bold my-4 text-[#1d83bd]">DoEE, EPD</h2>
           <div className=" bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
               The Department of Employment and Entrepreneurship (DoEE) is a
@@ -218,7 +218,7 @@ const AboutUs = () => {
           </div>
       </div>
       <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 className="text-2xl font-bold my-4 text-[#1d83bd]">Our Partners</h2>
+        <h2 id="partners" className="text-2xl font-bold my-4 text-[#1d83bd]">Our Partners</h2>
           <div className="flex flex-nowrap overflow-x-auto">
             <div className="min-w-xl w-[calc(50vw - 1rem)] bg-white shadow-md rounded-lg p-6 mx-2">
               <img

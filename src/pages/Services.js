@@ -4,6 +4,7 @@ import serubtse from "../img/ShreubtsheLogo.png";
 import cnr from "../img/CNRLogo.png";
 import gcbs from "../img/GCBSLogo.webp";
 import jnec from "../img/JNECLogo.png";
+import {BsFillArrowRightCircleFill} from "react-icons/bs"
 
 
 const Services = () => {
@@ -26,6 +27,13 @@ const Services = () => {
           </a>
           </div>
         })}
+          <a href="/services/incubation-center-registration">
+        <div className='bg-[#0d57d8] rounded-[50px] shadow-sm p-5 h-[200px] w-[200px] flex flex-col justify-center items-center'>
+          <h1 className='text-[white] font-semibold text-xl text-center' >Register for an Incubation Space 
+          </h1>
+          <i className='text-3xl text-center text-white'><BsFillArrowRightCircleFill/></i> 
+          </div>
+          </a>
       </div>
     </div>
   )
