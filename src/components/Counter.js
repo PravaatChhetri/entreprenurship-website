@@ -75,7 +75,7 @@ const Counter = () => {
 	return (
 		<div
 			ref={ref}
-			className="flex items-center justify-around py-8 px-8 text-white bg-blue-500"
+			className="flex items-center justify-around py-8 px-8 text-white bg-gradient-to-b from-orange-500 to-[#f3bf84]"
 		>
 			<div className="flex flex-col items-center justify-center">
 				<div ref={becGraduatesRef} className="text-4xl font-bold text-white counter">
