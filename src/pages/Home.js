@@ -92,7 +92,7 @@ const Home = () => {
           {/* Event 2 */}
           <div className="card w-80 h-[450px] bg-slate-100 shadow-lg">
             <figure className="px-10 pt-10">
-              <img src={event1} className="rounded-xl" />
+              <img src={event1} className="rounded-xl"  />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title pt-5 font-bold text-xl">Bhutan Startup Hackathon Challenge</h2>

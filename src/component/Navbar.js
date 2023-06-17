@@ -12,21 +12,33 @@ const NavBar = ({ children }) => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div className="bg-[#fff0]">
-      <div className="drawer drawer-end">
-        <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
-          <div className="flex items-center justify-between px-6 py-4 bg-transparent md:px-8 lg:w-auto lg:px-8">
-            <a href="/">
-              <img className="h-16 md:h-18 lg:h-18" src={RGOBLogo} alt="CST" />
-            </a>
+    <div className="drawer drawer-end">
+      <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col">
+        <div className="flex items-center justify-between px-6 py-4 bg-transparent md:px-8 lg:w-auto lg:px-8">
+          <a href="/">
+            <img className="h-16 md:h-18 lg:h-18" src={RGOBLogo} alt="CST" />
+          </a>
+          <div className="ml-auto flex items-center">
+            <Link to="/login" className="mr-2">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Login
+              </button>
+            </Link>
+            <Link to="/signup">
+              <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-10 ">
+                Sign Up
+              </button>
+            </Link>
             <label
               htmlFor="my-drawer-4"
-              className=" text-[#767676] drawer-button"
+              className="text-[#767676] drawer-button"
             >
               <svg
-                className=" fill-current"
+                className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -36,8 +48,9 @@ const NavBar = ({ children }) => {
               </svg>
             </label>
           </div>
-          {children}
-          <Footer />
+        </div>
+        {children}
+        <Footer/>
         </div>
         <div className="drawer-side ">
           <label htmlFor="my-drawer-4" className="drawer-overlay "></label>
