@@ -71,25 +71,25 @@ const NavBar = ({ children }) => {
                 <div className="collapse-title pl-0 ">About Us</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
                 <Link to="/about-us"> 
-                <a href =" " onClick={() => scrollToSection("vision")}>Vision</a>
+                <a onClick={() => scrollToSection("vision")}>Vision</a>
                 </Link>
                 <Link to="/about-us"> 
-                <a href =" " onClick={() => scrollToSection("mission")}>Mission</a>
+                <a onClick={() => scrollToSection("mission")}>Mission</a>
                 </Link>
                 <Link to="/about-us"> 
                 <a href =" " onClick={() => scrollToSection("PandR")}>Policy and Regulations</a>
                 </Link>
                 <Link to="/about-us" > 
-                <a href =" " onClick={() => scrollToSection("framework")}>Framework</a>
+                <a onClick={() => scrollToSection("framework")}>Framework</a>
                 </Link>
                 <Link to="/about-us"> 
-                <a href =" " onClick={() => scrollToSection("mandates")}>Mandates</a>
+                <a onClick={() => scrollToSection("mandates")}>Mandates</a>
                 </Link>
                 <Link to="/about-us"> 
-                <a href =" " onClick={() => scrollToSection("dp")}>DoEE, EPD</a>
+                <a onClick={() => scrollToSection("dp")}>DoEE, EPD</a>
                 </Link>
                 <Link to="/about-us"> 
-                <a href =" " onClick={() => scrollToSection("partners")}>Our Partners</a>
+                <a onClick={() => scrollToSection("partners")}>Our Partners</a>
                 </Link>
                 </div>
               </div>
