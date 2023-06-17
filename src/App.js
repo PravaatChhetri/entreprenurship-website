@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Program from './pages/Program';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 import Registration from './pages/Registration';
 import Mentors from './pages/Mentors';
 import Notification from './pages/Notification';
@@ -78,6 +79,14 @@ const App = () => {
 					element={
 						<Layout>
 							<Login />
+						</Layout>
+					}
+				/>
+				<Route
+					path="/signup"
+					element={
+						<Layout>
+							<Signup />
 						</Layout>
 					}
 				/>
