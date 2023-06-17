@@ -3,6 +3,7 @@ import React from 'react'
 import DHI from "../img/dhi.webp"
 import Loden from "../img/loden.png"
 // import bi-facebook, bi-youtube,bi-instagram from 'react-icons/bi'
+ import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -99,7 +100,13 @@ const Footer = () => {
 					<i className="text-3xl bi bi-instagram"></i>
 				</a>
 			</div>
-			<div className="flex justify-center mt-4 text-[#eee]">
+			<div className="flex flex-col justify-center mt-4 text-[#eee]">
+				<div className='flex justify-center items-center gap-5 my-4'>
+				<i className='text-white text-3xl'> <FaFacebook/></i>
+				<i className='text-white text-3xl'> <FaTwitter/></i>
+				<i className='text-white text-3xl'> <FaLinkedinIn/></i>
+					
+				</div>
 				<p className='text-center'>© 2023 Department of Employment &amp; Entrepreneurship</p>
 			</div>
 		</div>

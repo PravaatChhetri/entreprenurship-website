@@ -54,7 +54,7 @@ const NavBar = ({ children }) => {
         </div>
         <div className="drawer-side ">
           <label htmlFor="my-drawer-4" className="drawer-overlay "></label>
-          <ul className="flex flex-col p-10 w-[300px] sm:w-[350px] h-[100vh] bg-[#021b2a] text-white text-2xl ">
+          <ul className="flex flex-col p-10 w-[300px] sm:w-[350px] min-h-full bg-[#021b2a]  text-white text-2xl ">
             <a href="/">
               <img
                 className="h-auto w-20 mx-auto mb-10"
@@ -70,12 +70,16 @@ const NavBar = ({ children }) => {
                 <input type="checkbox" />
                 <div className="collapse-title pl-0 ">About Us</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                <Link to="/about-us"> 
+            
+                <Link to="/about-us" className="drawer-toggle"> 
                 <a onClick={() => scrollToSection("vision")}>Vision</a>
                 </Link>
+           
+        
                 <Link to="/about-us"> 
-                <a onClick={() => scrollToSection("mission")}>Mission</a>
+                <a onClick={() => scrollToSection("mission")} >Mission</a>
                 </Link>
+           
                 <Link to="/about-us"> 
                 <a href =" " onClick={() => scrollToSection("PandR")}>Policy and Regulations</a>
                 </Link>
@@ -111,11 +115,11 @@ const NavBar = ({ children }) => {
                 <input type="checkbox" />
                 <div className="collapse-title pl-0 ">Programs</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/programs">Startup Events</Link>
-                  <Link to="/programs">Training</Link>
-                  <Link to="/programs">Mentoring Programs</Link>
-                  <Link to="/programs">Promotion and Networking Events</Link>
-                  <Link to="/programs">Accelerator Programs</Link>
+                  <Link to="/program">Startup Events</Link>
+                  <Link to="/program">Training</Link>
+                  <Link to="/program">Mentoring Programs</Link>
+                  <Link to="/program">Promotion and Networking Events</Link>
+                  <Link to="/program">Accelerator Programs</Link>
                 </div>
               </div>
             </li>

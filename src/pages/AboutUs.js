@@ -13,13 +13,13 @@ const AboutUs = () => {
             alt="Startup Background"
             className="w-full lg:h-full relative object-bottom object-cover"
           />
-          <h1 className="absolute bottom-40 lg:bottom-10 left-0 px-6 py-10 font-bold text-white md:px-20 md:py-10 md:text-8xl">
+          <h1 className="absolute mt-6 text-3xl lg:bottom-10 left-0 px-6 py-10 font-bold text-white md:px-20 md:py-10 md:text-8xl">
             About Us
           </h1>
         </div>
       </div>
-      I
-      <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
+      
+      <div className="relative mt-[-200px] container mx-auto sm:mt-8 min-w-xl max-w-[80vw] justify-left">
         <h2 id="vision" className="text-2xl font-bold my-4 text-[#1d83bd]">Our Vision</h2>
         <div className=" bg-white shadow-md rounded-lg p-6 mx-auto">
           <p className="text-gray-700 text-xl">

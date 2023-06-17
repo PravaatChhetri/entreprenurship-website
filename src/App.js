@@ -116,7 +116,9 @@ const App = () => {
 				<Route
 					path="/services/Incubation-center-registration"
 					element={
+						<Layout>
 							<ServiceRegistration />
+						</Layout>
 					}
 					/>
 				<Route
