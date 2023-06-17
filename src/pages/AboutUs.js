@@ -217,27 +217,24 @@ const AboutUs = () => {
             </p>
           </div>
       </div>
-      <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-left">
-        <h2 id="partners" className="text-2xl font-bold my-4 text-[#1d83bd]">Our Partners</h2>
-          <div className="flex flex-nowrap overflow-x-auto">
+      <div className="relative container mx-auto mt-8 min-w-xl max-w-[80vw] justify-center items-center overflow-x-auto">
+          <h2 id="partners" className="text-2xl font-bold my-4 text-[#1d83bd] text-left">Locations</h2>
+          <div className="flex justify-center items-center overflow-x-auto">
             <div className="min-w-xl w-[calc(50vw - 1rem)] bg-white shadow-md rounded-lg p-6 mx-2">
-              <img
-                src={Dhi}
-                alt="DHI"
-                className="w-full h-auto object-contain rounded-lg"
-                style={{ maxWidth: "200px", maxHeight: "200px" }}
-              />
-            </div>
-            <div className="min-w-xl w-[calc(50vw - 1rem)] bg-white shadow-md rounded-lg p-6 mx-2">
-              <img
-                src={loden}
-                alt="loden foundation"
-                className="w-full h-auto object-contain rounded-lg"
-                style={{ maxWidth: "200px", maxHeight: "200px" }}
-              />
+            <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.283538118415!2d89.64243477046894!3d27.460430849827713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e195c57846c713%3A0xb14dccc42794959!2sStartup%20Centre!5e0!3m2!1sen!2sbt!4v1686984900783!5m2!1sen!2sbt"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+
             </div>
           </div>
       </div>
+        
     </div>
   );
 };
