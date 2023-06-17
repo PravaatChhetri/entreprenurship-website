@@ -20,7 +20,7 @@ const AboutUs = () => {
       </div>
       I
       <div className="relative container mx-auto mt-8">
-        <h2 className="text-2xl font-bold my-4 text-[#02395c]">Our Vision</h2>
+        <h2 id="vision" className="text-2xl font-bold my-4 text-[#02395c]">Our Vision</h2>
         <div className="flex justify-left">
           <div className="min-w-xl max-w-[80vw] bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
@@ -33,7 +33,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8">
-        <h2 className="text-2xl font-bold my-4 text-[#02395c]">Our Mission</h2>
+        <h2 id="mission" className="text-2xl font-bold my-4 text-[#02395c]">Our Mission</h2>
         <div className="flex justify-left">
           <div className="min-w-xl max-w-[80vw] bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
@@ -83,7 +83,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8">
-        <h2 className="text-2xl font-bold my-4 text-[#02395c]">Policy and Regulations</h2>
+        <h2 id="PandR" className="text-2xl font-bold my-4 text-[#02395c]">Policy and Regulations</h2>
         <div className="flex justify-left">
           <div className="min-w-xl max-w-[80vw] bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
@@ -133,7 +133,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8">
-        <h2 className="text-2xl font-bold my-4 text-[#02395c]">Framework</h2>
+        <h2 id="framework" className="text-2xl font-bold my-4 text-[#02395c]">Framework</h2>
         <div className="flex justify-left">
           <div className="min-w-xl max-w-[80vw] bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
@@ -148,7 +148,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8">
-        <h2 className="text-2xl font-bold my-4 text-[#02395c]">Mandates</h2>
+        <h2 id="mandates" className="text-2xl font-bold my-4 text-[#02395c]">Mandates</h2>
         <div className="flex justify-left">
           <div className="min-w-xl max-w-[80vw] bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
@@ -201,7 +201,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8">
-        <h2 className="text-2xl font-bold my-4 text-[#02395c]">DoEE, EPD</h2>
+        <h2 id="dp" className="text-2xl font-bold my-4 text-[#02395c]">DoEE, EPD</h2>
         <div className="flex justify-left">
           <div className="min-w-xl max-w-[80vw] bg-white shadow-md rounded-lg p-6 mx-auto">
             <p className="text-gray-700 text-xl">
@@ -225,7 +225,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="relative container mx-auto mt-8">
-        <h2 className="text-2xl font-bold my-4 text-[#02395c]">Our Partners</h2>
+        <h2 id="partners" className="text-2xl font-bold my-4 text-[#02395c]">Our Partners</h2>
         <div className="flex justify-left">
           <div className="flex flex-nowrap overflow-x-auto">
             <div className="min-w-xl w-[calc(50vw - 1rem)] bg-white shadow-md rounded-lg p-6 mx-2">

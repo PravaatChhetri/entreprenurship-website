@@ -12,6 +12,7 @@ import Services from './pages/Services';
 import Dashboard from './pages/Dashboard';
 import ProgramRegistration from './pages/ProgramRegistration';
 import Navbar from './component/Navbar';
+import ServiceRegistration from './pages/ServiceRegistration';
 
 // function App() {
 //   return (
@@ -112,6 +113,12 @@ const App = () => {
 						</Layout>
 					}
 				/>
+				<Route
+					path="/services/Incubation-center-registration"
+					element={
+							<ServiceRegistration />
+					}
+					/>
 				<Route
 					path="/dashboard"
 					element={

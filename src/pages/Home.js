@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{ useState,useEffect,useRef} from 'react'
+
 import Counter from "../components/Counter.js"
 import herobg1 from "../assets/images/hero-bg1.jpg"
 import herobg2 from "../assets/images/hero-bg2.jpg"
@@ -8,11 +9,15 @@ import user1 from "../assets/images/user.jpg"
 import event1 from "../assets/images/hackathon.jpg"
 import {CiCircleChevRight, CiCircleChevLeft} from "react-icons/ci"
 
+
+
+
+
 const Home = () => {
   return (
     // hero section
     <div className="bg-slate-200">
-      <img src={herobg1} alt="Hero Background" className="w-full h-[400px]"/>
+      <img src={herobg1} alt="Hero Background" className="w-full h-[400px] object-fit object-bottom"/>
 
 
       {/* Announcement section */}
@@ -151,32 +156,13 @@ const Home = () => {
       </div>
 
       {/* Booking Incubation space */}
-      <div className="flex flex-row row-span-2 h-[550px]">
+      {/* <div className="flex flex-row row-span-2 h-[550px]">
         <div className="bg-blue-500 w-[30%]">
           <h1 className="text-center font-bold text-4xl text-white pt-8 px-24">Book Your Incubation Space Here!</h1>
         </div>
-        {/* form */}
-        <div className="bg-white w-[70%]">
-          <h1 className="font-bold text-2xl my-8 text-center">Registration Form</h1>
-          <div className="flex flex-row row-span-2 gap-20 justify-center py-10">
-            <div className="flex flex-col gap-6">
-              <input type="text" placeholder="Enter your name here" className="p-2 bg-slate-200 rounded-lg"/>
-              <input type="text" placeholder="Company Name" className="p-2 bg-slate-200 rounded-lg"/>
-              <input type="email" placeholder="Email" className="p-2 bg-slate-200 rounded-lg"/>
-              <input type="text" placeholder="Contact Number" className="p-2 bg-slate-200 rounded-lg"/>
-            </div>
-            <div className="flex flex-col gap-6">
-            <input type="text" placeholder="Description/Remarks" className="px-2 h-24 bg-slate-200 rounded-lg"/>
-            <input type="date" placeholder="Start Date" className="p-2 bg-slate-200 rounded-lg"/>
-            <input type="date" placeholder="End Date" className="p-2 bg-slate-200 rounded-lg"/>
-            </div>
-          </div>
-          <div className="flex justify-center my-8">
-            <button className="p-2 w-32 bg-blue-500 rounded-md text-center font-semibold text-white hover:border-2 hover:border-blue-500 hover:bg-transparent hover:text-blue-500">Submit</button>
-          </div>
-
-        </div>
-      </div>
+        {/* form 
+       
+      </div> */}
 
 
     </div>

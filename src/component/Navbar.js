@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 import RGOBLogo from "../img/rgobLogo.png";
 
 
+
 const NavBar = ({ children }) => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="bg-[#fff0]">
       <div className="drawer drawer-end">
@@ -50,13 +57,27 @@ const NavBar = ({ children }) => {
                 <input type="checkbox" />
                 <div className="collapse-title pl-0 ">About Us</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/admission-policy">Vision</Link>
-                  <Link to="/academics">Mission</Link>
-                  <Link to="/fee-structure">Policy and Regulations</Link>
-                  <Link to="/fee-structure">Frameworks</Link>
-                  <Link to="/fee-structure">Mandates</Link>
-                  <Link to="/fee-structure">DoEE, EPD</Link>
-                  <Link to="/fee-structure">Our Partners</Link>
+                <Link to="/about-us"> 
+                <a href =" " onClick={() => scrollToSection("vision")}>Vision</a>
+                </Link>
+                <Link to="/about-us"> 
+                <a href =" " onClick={() => scrollToSection("mission")}>Mission</a>
+                </Link>
+                <Link to="/about-us"> 
+                <a href =" " onClick={() => scrollToSection("PandR")}>Policy and Regulations</a>
+                </Link>
+                <Link to="/about-us" > 
+                <a href =" " onClick={() => scrollToSection("framework")}>Framework</a>
+                </Link>
+                <Link to="/about-us"> 
+                <a href =" " onClick={() => scrollToSection("mandates")}>Mandates</a>
+                </Link>
+                <Link to="/about-us"> 
+                <a href =" " onClick={() => scrollToSection("dp")}>DoEE, EPD</a>
+                </Link>
+                <Link to="/about-us"> 
+                <a href =" " onClick={() => scrollToSection("partners")}>Our Partners</a>
+                </Link>
                 </div>
               </div>
             </li>
@@ -65,7 +86,9 @@ const NavBar = ({ children }) => {
                 <input type="checkbox" />
                 <div className="collapse-title pl-0 ">Services</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/services/#incubation">Incubation Center</Link>
+                  <Link to="/services">
+                  <a href =" " onClick={() => scrollToSection("incubation")}> Incubation Center</a>
+                  </Link>
                   <Link to="/services">BDS</Link>
                 </div>
               </div>
@@ -75,11 +98,11 @@ const NavBar = ({ children }) => {
                 <input type="checkbox" />
                 <div className="collapse-title pl-0 ">Programs</div>
                 <div className="collapse-content text-[1.2rem] flex flex-col gap-3 pb-0">
-                  <Link to="/admission-policy">Startup Events</Link>
-                  <Link to="/academics">Training</Link>
-                  <Link to="/fee-structure">Mentoring Programs</Link>
-                  <Link to="/fee-structure">Promotion and Networking Events</Link>
-                  <Link to="/fee-structure">Accelerator Programs</Link>
+                  <Link to="/programs">Startup Events</Link>
+                  <Link to="/programs">Training</Link>
+                  <Link to="/programs">Mentoring Programs</Link>
+                  <Link to="/programs">Promotion and Networking Events</Link>
+                  <Link to="/programs">Accelerator Programs</Link>
                 </div>
               </div>
             </li>
