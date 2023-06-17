@@ -59,7 +59,7 @@ const Home = () => {
           <div className="flex flex-col justify-center items-center mt-8 w-[80%]">
             {/* Announcement items */}
 
-            <div className="flex flex-col lg:flex-row mb-6 hover:border-2 hover:rounded-lg hover:p-3 hover:border-blue-500 hover:shadow-xl">
+            <div className="flex flex-col lg:flex-row mb-6 hover:border-2 hover:rounded-lg p-3 hover:border-blue-500 hover:shadow-xl transition-all ease-in-out delay-200">
               <div className="bg-[#FFA500] w-[120px] h-[120px] pt-3 rounded-lg text-center">
                 <p className="text-6xl">15</p>
                 <p className="font-bold">June 2023</p>
@@ -73,7 +73,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row mb-6 hover:border-2 hover:rounded-lg hover:p-3 hover:border-blue-500 hover:shadow-xl">
+            <div className="flex flex-col lg:flex-row mb-6 hover:border-2 hover:rounded-lg p-3 hover:border-blue-500 hover:shadow-xl transition-all ease-in-out delay-200">
               <div className="bg-[#FFA500] w-[120px] h-[120px] pt-3 rounded-lg text-center">
 
                 <p className="text-6xl">05</p>
@@ -88,7 +88,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row mb-6 hover:border-2 hover:rounded-lg hover:p-3 hover:border-blue-500 transition-all ease-in-out delay-200 hover:shadow-xl">
+            <div className="flex flex-col lg:flex-row mb-6 hover:border-2 hover:rounded-lg p-3 hover:border-blue-500 transition-all ease-in-out delay-200 hover:shadow-xl">
               <div className="bg-[#FFA500] w-[120px] h-[120px] pt-3 rounded-lg text-center">
 
                 <p className="text-6xl">05</p>

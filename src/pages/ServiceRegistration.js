@@ -3,11 +3,11 @@ import React from "react";
 const ServiceRegistration = () => {
   return (
     <div className="flex justify-center items-center h-[100vh]">
-      <div className="bg-white w-[90%] md:w-[70%] rounded-md">
-        <h1 className="font-bold text-2xl my-8 text-center">
+      <div className="bg-white w-[90%] lg:w-[50%] rounded-md">
+        <h1 className="font-bold text-3xl my-8 text-center">
           Registration Form
         </h1>
-        <div className="flex flex-row row-span-2 gap-20 justify-center py-10">
+        <div className="flex flex-col px-10 lg:px-0 lg:flex-row row-span-2 gap-20 justify-center py-10">
           <div className="flex flex-col gap-6 ">
             <input
               type="text"
@@ -44,9 +44,9 @@ const ServiceRegistration = () => {
             <input
               type="text"
               placeholder="Description/Remarks"
-              className="px-2 h-24 bg-slate-200 rounded-lg"
+              className="px-2 min-h-[100px] max-h-[100%] bg-slate-200 rounded-lg"
             />
-            <div className="flex gap-3 items-center justify-evenly">
+            {/* <div className="flex gap-3 items-center justify-evenly">
             <label for="start-date" className="text-md font-semibold">
               Start Date
             </label>
@@ -65,7 +65,7 @@ const ServiceRegistration = () => {
               placeholder="End Date"
               className="p-2 bg-slate-200 rounded-lg w-[200px]"
             />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex justify-center my-8">

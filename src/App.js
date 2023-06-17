@@ -14,6 +14,8 @@ import Dashboard from './pages/Dashboard';
 import ProgramRegistration from './pages/ProgramRegistration';
 import Navbar from './component/Navbar';
 import ServiceRegistration from './pages/ServiceRegistration';
+import Startups from './pages/StartUps';
+import Annoucements from './pages/Annoucements';
 
 // function App() {
 //   return (
@@ -130,6 +132,10 @@ const App = () => {
 						</Layout>
 					}
 					/>
+				<Route path="/startups"
+				element={<Layout>
+					<Startups/>
+				</Layout>}/>
 				<Route
 					path="/dashboard"
 					element={
@@ -146,6 +152,10 @@ const App = () => {
 						</Layout>
 					}
 				/>
+				<Route path="/annoucements"
+				element={<Layout>
+					<Annoucements/>
+				</Layout>}/>
 					<Route path="*" element={<div className='flex justify-center items-center h-[100vh]'>
             <h1 className='text-center text-[72px] font-bold text-[#603500]'> 404 Page Not Found</h1>
             </div>}/>
