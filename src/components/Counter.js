@@ -112,7 +112,7 @@ const Counter = () => {
 				<div className="text-lg">Incubates</div>
 			</div>
 
-			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/7">
 				<div ref={startupsRef} className="text-4xl font-bold text-white counter">
 					{sups}
 				</div>
