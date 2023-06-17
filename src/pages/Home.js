@@ -11,8 +11,11 @@ import { CiCircleChevRight, CiCircleChevLeft } from "react-icons/ci";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Slider from "react-slick";
+
 
 const Home = () => {
+
   return (
     // hero section
     <div className="bg-slate-200">
@@ -114,10 +117,10 @@ const Home = () => {
 
         {/* Event items */}
         <div className="flex justify-center items-center ">
-          <CiCircleChevLeft className="w-10 h-10" />
-        <div className="flex justify-center items-center flex-col w-[75vw] lg:flex-row row-span-3 gap-16 mt-10">
-          {/* Event 1 */}
-          <div className="card w-80 h-[450px] bg-slate-100 rounded-none shadow-lg hover:border-2 hover:border-[#FFA500] hover:shadow-2xl">
+          <CiCircleChevLeft className="w-10 h-10 hover:rounded-full hover:bg-orange-300" />
+          <div className="flex justify-center items-center flex-col w-[75vw] lg:flex-row row-span-3 gap-16 mt-10 mx-10">
+            {/* Event 1 */}
+            <div className="card w-80 h-[450px] bg-slate-100 rounded-none shadow-lg hover:border-2 hover:border-[#FFA500] hover:shadow-2xl">
             <figure className="px-10 pt-10">
               <img src={event1} className="rounded-xl" />
             </figure>
@@ -132,10 +135,10 @@ const Home = () => {
                 <button className="btn p-2 mt-3 border-2 border-[#FFA500] rounded-lg font-semibold hover:bg-[#FFA500] hover:text-white">Read More</button>
               </div>
             </div>
-          </div>
+            </div>
 
-          {/* Event 2 */}
-          <div className="card w-80 h-[450px] bg-slate-100 rounded-none shadow-lg hover:border-2 hover:border-[#FFA500] hover:shadow-2xl">
+            {/* Event 2 */}
+            <div className="card w-80 h-[450px] bg-slate-100 rounded-none shadow-lg hover:border-2 hover:border-[#FFA500] hover:shadow-2xl">
             <figure className="px-10 pt-10">
               <img src={event1} className="rounded-xl" />
             </figure>
@@ -150,27 +153,27 @@ const Home = () => {
                 <button className="btn p-2 mt-3 border-2 border-[#FFA500] rounded-lg font-semibold hover:bg-[#FFA500] hover:text-white">Read More</button>
               </div>
             </div>
-          </div>
+            </div>
 
-          {/* Event 3 */}
-          <div className="card w-80 h-[450px] bg-slate-100 rounded-none shadow-lg hover:border-2 hover:border-[#FFA500] hover:shadow-2xl">
-            <figure className="px-10 pt-10">
-              <img src={event1} className="rounded-xl" />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title pt-5 font-bold text-xl">
-                Bhutan Startup Hackathon Challenge
-              </h2>
-              <p className="text-xs pt-3">
-                Empowering Start-up Ecosystem through Digital Transformation
-              </p>
-              <div className="card-actions">
-                <button className="btn p-2 mt-3 border-2 border-[#FFA500] rounded-lg font-semibold hover:bg-[#FFA500] hover:text-white">Read More</button>
+            {/* Event 3 */}
+            <div className="card w-80 h-[450px] bg-slate-100 rounded-none shadow-lg hover:border-2 hover:border-[#FFA500] hover:shadow-2xl">
+              <figure className="px-10 pt-10">
+                <img src={event1} className="rounded-xl" />
+              </figure>
+              <div className="card-body items-center text-center">
+                <h2 className="card-title pt-5 font-bold text-xl">
+                  Bhutan Startup Hackathon Challenge
+                </h2>
+                <p className="text-xs pt-3">
+                  Empowering Start-up Ecosystem through Digital Transformation
+                </p>
+                <div className="card-actions">
+                  <button className="btn p-2 mt-3 border-2 border-[#FFA500] rounded-lg font-semibold hover:bg-[#FFA500] hover:text-white">Read More</button>
+                </div>
               </div>
             </div>
           </div>
-       </div>
-          <CiCircleChevRight className="w-10 h-10" />
+          <CiCircleChevRight className="w-10 h-10 hover:rounded-full hover:bg-orange-300" />
         </div>
       </div>
 
@@ -182,39 +185,39 @@ const Home = () => {
         <h1 className="text-[35px] font-bold text-center mt-8 text-[#808080]">
           Testimonials
         </h1>
-<div className="flex justify-center items-center">
-          <CiCircleChevLeft className="w-10 h-10" />
-        <div className="flex lg:flex-row flex-col lg:row-span-2 gap-20 py-14 justify-center items-center">
-          {/* testimonial 1 */}
-          <div className="card w-96 h-[450px] bg-slate-100 border-4 border-t-[#FFA500] rounded-3xl">
+        <div className="flex justify-center items-center">
+          <CiCircleChevLeft className="w-10 h-10 hover:rounded-full hover:bg-orange-300" />
+          <div className="flex lg:flex-row flex-col lg:row-span-2 gap-20 py-14 justify-center items-center mx-10">
+            {/* testimonial 1 */}
+            <div className="card w-96 h-[450px] bg-slate-100 border-4 border-t-[#FFA500] rounded-3xl">
+                <div className="mx-[35%] mt-10 mb-4 w-28 rounded-full">
+                  <img src={user1} className="rounded-full" />
+                </div>
+                <div className="card-body items-center text-center">
+                  <h2 className="card-title font-bold text-xl text-[#FFA500]">Pravaat</h2>
+                  <p className="p-4 text-justify">"Thanks to Startup Bhutan, my business has experienced exponential growth. Highly recommended!"</p>
+                </div>
+            </div>
+
+            {/* testimonial 2 */}
+            <div className="card w-96 h-[450px] bg-slate-100 border-4 border-t-blue-500 rounded-3xl">
               <div className="mx-[35%] mt-10 mb-4 w-28 rounded-full">
                 <img src={user1} className="rounded-full" />
               </div>
               <div className="card-body items-center text-center">
-                <h2 className="card-title font-bold text-xl text-[#FFA500]">Pravaat</h2>
-                <p className="p-4 text-justify">"Thanks to Startup Bhutan, my business has experienced exponential growth. Highly recommended!"</p>
+                <h2 className="card-title font-bold text-xl text-blue-500">
+                  Dechen
+                </h2>
+                <p className="p-5 text-justify">
+                  "Startup Bhutan has been a game-changer for our startup. Their
+                  network, resources, and guidance have helped us scale our
+                  business and reach new heights."
+                </p>
               </div>
           </div>
-
-          {/* testimonial 2 */}
-          <div className="card w-96 h-[450px] bg-slate-100 border-4 border-t-blue-500 rounded-3xl">
-            <div className="mx-[35%] mt-10 mb-4 w-28 rounded-full">
-              <img src={user1} className="rounded-full" />
-            </div>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title font-bold text-xl text-blue-500">
-                Dechen
-              </h2>
-              <p className="p-5 text-justify">
-                "Startup Bhutan has been a game-changer for our startup. Their
-                network, resources, and guidance have helped us scale our
-                business and reach new heights."
-              </p>
-            </div>
           </div>
+          <CiCircleChevRight className="w-10 h-10 hover:rounded-full hover:bg-orange-300" />
         </div>
-          <CiCircleChevRight className="w-10 h-10" />
-</div>
       </div>
     </div>
   );
