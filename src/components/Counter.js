@@ -77,7 +77,7 @@ const Counter = () => {
 			ref={ref}
 			className="flex flex-wrap w-full py-8 px-8 text-white bg-gradient-to-b from-orange-500 to-[#f3bf84]"
 		>
-			<div className="flex flex-col items-center justify-center w-1/4 lg:w-1/6">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={becGraduatesRef} className="text-4xl font-bold text-white counter">
 					{bec}
 				</div>
@@ -112,7 +112,7 @@ const Counter = () => {
 				<div className="text-lg">Incubates</div>
 			</div>
 
-			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/7">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={startupsRef} className="text-4xl font-bold text-white counter">
 					{sups}
 				</div>
