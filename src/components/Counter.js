@@ -75,49 +75,44 @@ const Counter = () => {
 	return (
 		<div
 			ref={ref}
-			className="flex items-center justify-around py-8 px-8 text-white bg-gradient-to-b from-orange-500 to-[#f3bf84]"
+			className="flex flex-wrap w-full py-8 px-8 text-white bg-gradient-to-b from-orange-500 to-[#f3bf84]"
 		>
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={becGraduatesRef} className="text-4xl font-bold text-white counter">
 					{bec}
 				</div>
 				<div className="text-lg">BEC Graduates</div>
 			</div>
-			<hr className="h-24 mx-6 border-l border-white" />
 			
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={aecGraduatesRef} className="text-4xl font-bold text-white counter">
 					{aec}
 				</div>
 				<div className="text-lg">AEC Graduates</div>
 			</div>
-			<hr className="h-24 mx-6 border-l border-white" />
 
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={totGraduatesRef} className="text-4xl font-bold text-white counter">
 					{tot}
 				</div>
 				<div className="text-lg">TOT Graduates</div>
 			</div>
-			<hr className="h-24 mx-6 border-l border-white" />
 
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={eventsRef} className="text-4xl font-bold text-white counter">
 					{eve}
 				</div>
 				<div className="text-lg">Events</div>
 			</div>
-			<hr className="h-24 mx-6 border-l border-white" />
 
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={incubatesRef} className="text-4xl font-bold text-white counter">
 					{incub}
 				</div>
 				<div className="text-lg">Incubates</div>
 			</div>
-			<hr className="h-24 mx-6 border-l border-white" />
 
-			<div className="flex flex-col items-center justify-center">
+			<div className="flex flex-col items-center justify-center w-1/3 lg:w-1/6">
 				<div ref={startupsRef} className="text-4xl font-bold text-white counter">
 					{sups}
 				</div>

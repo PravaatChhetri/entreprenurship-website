@@ -16,7 +16,7 @@ const Home = () => {
   return (
     // hero section
     <div className="bg-slate-200">
-      <div className="bg-slate-200">
+      <div className="bg-slate-200 w-full">
         <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay>
           <div>
             <img
@@ -50,13 +50,13 @@ const Home = () => {
       </div>
 
       {/* Announcement section */}
-      <div className="mb-10">
+      <div className="mb-10 w-[100vw] flex flex-col">
         <h1 className="text-[35px] font-bold text-center mt-8 text-[#808080]">
           Announcements
         </h1>
 
-        <div className="flex justify-center">
-          <div className="flex flex-col mt-8">
+        <div className="flex justify-center items-center">
+          <div className="flex flex-col justify-center items-center mt-8 w-[80%]">
             {/* Announcement items */}
 
             <div className="flex flex-col lg:flex-row mb-6 hover:border-2 hover:rounded-lg hover:p-3 hover:border-blue-500 hover:shadow-xl">
@@ -107,14 +107,15 @@ const Home = () => {
       </div>
 
       {/* Events section */}
-      <div className="bg-white pt-10 pb-20">
+      <div className="bg-white pt-10 pb-20 w-full">
         <h1 className="text-[35px] font-bold text-center text-[#808080]">
           Events
         </h1>
 
         {/* Event items */}
-        <div className="flex justify-center flex-row row-span-3 gap-16 mt-10">
+        <div className="flex justify-center items-center ">
           <CiCircleChevLeft className="w-10 h-10" />
+        <div className="flex justify-center items-center flex-col w-[75vw] lg:flex-row row-span-3 gap-16 mt-10">
           {/* Event 1 */}
           <div className="card w-80 h-[450px] bg-slate-100 rounded-none shadow-lg hover:border-2 hover:border-[#FFA500] hover:shadow-2xl">
             <figure className="px-10 pt-10">
@@ -168,6 +169,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+       </div>
           <CiCircleChevRight className="w-10 h-10" />
         </div>
       </div>
@@ -180,9 +182,9 @@ const Home = () => {
         <h1 className="text-[35px] font-bold text-center mt-8 text-[#808080]">
           Testimonials
         </h1>
-
-        <div className="flex flex-row row-span-2 gap-20 py-14 justify-center">
+<div className="flex justify-center items-center">
           <CiCircleChevLeft className="w-10 h-10" />
+        <div className="flex lg:flex-row flex-col lg:row-span-2 gap-20 py-14 justify-center items-center">
           {/* testimonial 1 */}
           <div className="card w-96 h-[450px] bg-slate-100 border-4 border-t-[#FFA500] rounded-3xl">
               <div className="mx-[35%] mt-10 mb-4 w-28 rounded-full">
@@ -210,17 +212,9 @@ const Home = () => {
               </p>
             </div>
           </div>
+        </div>
           <CiCircleChevRight className="w-10 h-10" />
-        </div>
-      </div>
-
-      {/* Booking Incubation space */}
-      <div className="flex flex-row row-span-2 h-[550px]">
-        <div className="bg-[#FFA500] w-[30%]">
-
-          <h1 className="text-center font-bold text-4xl text-white pt-8 px-24">Book Your Incubation Space Here!</h1>
-          <p></p>
-        </div>
+</div>
       </div>
     </div>
   );

@@ -54,7 +54,7 @@ const NavBar = ({ children }) => {
         </div>
         <div className="drawer-side ">
           <label htmlFor="my-drawer-4" className="drawer-overlay "></label>
-          <ul className="flex flex-col p-10 w-[300px] sm:w-[350px] h-[100vh] bg-[#021b2a] text-white text-2xl ">
+          <ul className="flex flex-col p-10 w-[300px] sm:w-[350px] h-full bg-[#021b2a] text-white text-2xl ">
             <a href="/">
               <img
                 className="h-auto w-20 mx-auto mb-10"
