@@ -93,7 +93,7 @@ const NavBar = ({ children }) => {
                 <a onClick={() => scrollToSection("dp")}>DoEE, EPD</a>
                 </Link>
                 <Link to="/about-us"> 
-                <a onClick={() => scrollToSection("partners")}>Our Partners</a>
+                <a onClick={() => scrollToSection("partners")}>Location</a>
                 </Link>
                 </div>
               </div>
