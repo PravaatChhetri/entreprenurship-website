@@ -12,33 +12,10 @@ import Notification from './pages/Notification';
 import Services from './pages/Services';
 import Dashboard from './pages/Dashboard';
 import ProgramRegistration from './pages/ProgramRegistration';
-import Navbar from './component/Navbar';
+import Navbar from './components/Navbar';
 import ServiceRegistration from './pages/ServiceRegistration';
 import Startups from './pages/StartUps';
 import Annoucements from './pages/Annoucements';
-
-// function App() {
-//   return (
-//     <div className="App">
-
-//       <BrowserRouter>
-//       <Navbar/>
-//         <Routes>
-//           <Route path="/" component={Home} />
-//           <Route path="/about-us" component={AboutUs} />
-//           <Route path="/programmes"  component={Program} />
-//           <Route path="/login" component={Login} />
-//           <Route path="/registration" component={Registration} />
-//           <Route path="/mentors" component={Mentors} />
-//           <Route path="/notification" component={Notification} />
-//           <Route path="/services" component={Services} />
-//           <Route path="/dashboard" component={Dashboard} />
-//           <Route path="/program-registration" component={ProgramRegistration} />
-//         </Routes>
-//         <Footer/>
-
-//       </BrowserRouter>
-
 
 const Layout = ({ children }) => {
 	return (

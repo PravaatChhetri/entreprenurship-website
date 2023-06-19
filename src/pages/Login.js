@@ -37,7 +37,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-white p-2 rounded-xl w-[500px] max-w-md border-2 shadow-2xl mb-10 border-orange-500">
+      <div className="bg-white p-[20px] rounded-xl w-[500px] max-w-md border-2 shadow-2xl mb-10 border-orange-500">
         <h2 className="text-3xl font-semibold mb-4 text-center text-[#808080]">Log-In</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           
@@ -69,7 +69,7 @@ const Login = () => {
               onChange={handleInputChange}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-orange-500"
             >
-              <option value="">Select your status</option>
+              <option value="">Select your Role</option>
               <option value="mentor">Mentor</option>
               <option value="mentee">Mentee</option>
             </select>
